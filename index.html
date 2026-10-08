@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Difusor de Aromas Ultrasónico con Luz LED · OnelixGlobal</title>
+<meta name="description" content="Difusor ultrasónico de 500 ml con luz LED, bruma fina y silenciosa. Humidifica y aromatiza tu casa. Pago contra entrega en toda Colombia, entrega en 2 a 5 días.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=Lora:ital@1&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F6F4EF; --card:#FFFFFF; --navy:#101A3C; --ink:#0B1226;
+    --blue:#1848D8; --gold:#B98A2F; --muted:#5C6476; --line:#E5E1D8;
+    --sora:'Sora',system-ui,sans-serif; --inter:'Inter',system-ui,sans-serif; --serif:'Lora',Georgia,serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--inter);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 26px}
+  a{color:inherit}
+
+  .topbar{background:var(--navy);color:var(--paper);font-size:13px;letter-spacing:.02em}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:40px;gap:12px;flex-wrap:wrap}
+  .topbar b{font-weight:600;color:#fff}
+  .topbar .tb-brand{font-family:var(--sora);font-weight:700}
+  .topbar .tb-brand em{font-style:normal;color:#7ea2ff}
+
+  .hero{padding:56px 0 40px}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:20px}
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--gold)}
+  h1{font-family:var(--sora);font-weight:800;font-size:clamp(34px,4.4vw,54px);line-height:1.06;letter-spacing:-.03em;color:var(--navy)}
+  h1 .accent{color:var(--blue)}
+  .lead{font-size:17px;color:var(--muted);max-width:470px;margin:18px 0 26px}
+  .precio{display:flex;align-items:baseline;gap:10px;margin-bottom:22px}
+  .precio .monto{font-family:var(--sora);font-weight:800;font-size:40px;color:var(--navy);letter-spacing:-.02em}
+  .precio .moneda{font-size:15px;color:var(--muted);font-weight:500}
+  .precio .tag{font-size:12px;font-weight:600;color:var(--gold);border:1px solid var(--gold);border-radius:999px;padding:4px 12px;letter-spacing:.03em}
+  .cta-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--sora);font-weight:700;font-size:16px;text-decoration:none;padding:16px 30px;border-radius:999px;transition:.2s}
+  .btn-solid{background:var(--navy);color:#fff}
+  .btn-solid:hover{background:var(--blue);transform:translateY(-1px)}
+  .btn-ghost{border:1.5px solid var(--navy);color:var(--navy)}
+  .btn-ghost:hover{background:#fff}
+  .trustline{margin-top:22px;font-size:13.5px;color:var(--muted);display:flex;gap:8px;align-items:center}
+  .trustline svg{width:15px;height:15px;stroke:var(--gold)}
+
+  .stage{position:relative}
+  .foto{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:20px;background:#fff;border:1px solid var(--line);box-shadow:0 30px 60px -30px rgba(16,26,60,.35);display:block}
+  .stage .chip{position:absolute;left:-12px;bottom:28px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 16px;box-shadow:0 14px 30px -18px rgba(16,26,60,.35);font-size:13px;font-weight:600}
+  .stage .chip small{display:block;color:var(--muted);font-weight:500;font-size:11.5px}
+
+  .specs{background:var(--navy);color:var(--paper)}
+  .specs .wrap{padding:30px 26px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .spec{text-align:left}
+  .spec .n{font-family:var(--sora);font-weight:800;font-size:28px;color:#fff;letter-spacing:-.02em}
+  .spec .n small{font-size:14px;font-weight:600;color:#7ea2ff}
+  .spec .l{font-size:13px;color:#b9c2dc;margin-top:2px}
+
+  .bonus{background:#f3ecd9;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .bonus .wrap{display:flex;align-items:center;gap:14px;padding:16px 26px;flex-wrap:wrap}
+  .bonus-tag{font-family:var(--sora);font-weight:700;font-size:14px;color:var(--gold);white-space:nowrap}
+  .bonus .bonus-txt{font-size:14.5px;color:var(--navy)}
+
+  section{padding:60px 0}
+  .kicker{display:block;font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+  h2{font-family:var(--sora);font-weight:700;font-size:clamp(26px,3.2vw,38px);line-height:1.15;letter-spacing:-.02em;color:var(--navy);margin-bottom:16px}
+  .bajada{color:var(--muted);font-size:16px;max-width:620px}
+
+  .dos-en-uno{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:34px}
+  .uso{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px}
+  .uso h3{font-family:var(--sora);font-weight:700;font-size:20px;color:var(--navy);margin-bottom:8px}
+  .uso p{color:var(--muted);font-size:15px}
+  .uso .badge{display:inline-block;font-size:12px;font-weight:600;color:var(--blue);background:#e8edfb;border-radius:999px;padding:4px 12px;margin-bottom:14px}
+
+  .pasos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+  .como-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}
+  .como-grid .pasos{margin-top:0}
+  .banner-cod{width:100%;border-radius:16px;border:1px solid var(--line);box-shadow:0 20px 40px -24px rgba(16,26,60,.3);display:block}
+  .paso{border-top:2px solid var(--line);padding-top:18px}
+  .paso .num{font-family:var(--sora);font-weight:800;font-size:15px;color:var(--gold)}
+  .paso h3{font-family:var(--sora);font-weight:700;font-size:17px;color:var(--navy);margin:10px 0 6px}
+  .paso p{color:var(--muted);font-size:14.5px}
+
+  details{border-bottom:1px solid var(--line);padding:16px 0}
+  details:first-of-type{border-top:1px solid var(--line)}
+  summary{font-family:var(--sora);font-weight:600;font-size:16px;color:var(--navy);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+  summary::-webkit-details-marker{display:none}
+  summary .plus{font-size:22px;color:var(--blue);font-weight:400}
+  details[open] .plus{transform:rotate(45deg)}
+  details p{color:var(--muted);font-size:15px;margin-top:10px;max-width:640px}
+
+  .final{background:var(--navy);color:var(--paper);text-align:left}
+  .final .wrap{display:flex;justify-content:space-between;align-items:center;gap:26px;flex-wrap:wrap}
+  .final h2{color:#fff}
+  .final .monto{font-family:var(--sora);font-weight:800;font-size:34px;color:#fff}
+  .final .sub{color:#b9c2dc;font-size:14px}
+  .final .btn-solid{background:var(--blue)}
+  .final .btn-solid:hover{background:#2a62f0}
+
+  footer{padding:26px 0;font-size:13px;color:var(--muted)}
+  footer a{color:var(--blue);text-decoration:none}
+
+  @media(max-width:820px){
+    .hero-grid{grid-template-columns:1fr;gap:30px}
+    .specs .wrap{grid-template-columns:repeat(2,1fr)}
+    .dos-en-uno,.pasos{grid-template-columns:1fr}
+    .como-grid{grid-template-columns:1fr}
+    .final .wrap{flex-direction:column;align-items:flex-start}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="tb-brand">Onelix<em>Global</em></span>
+    <span>🚚 <b>Pago contra entrega</b> en toda Colombia · entrega 2–5 días</span>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Difusor de aromas · ultrasónico</span>
+      <h1>Tu casa,<br><span class="accent">con olor a spa.</span></h1>
+      <p class="lead">Añade agua y unas gotas de tu aceite favorito: en minutos tienes una bruma fina, luz cálida y un ambiente relajado. Depósito de <strong>500 ml</strong>, silencioso y se apaga solo.</p>
+      <div class="precio">
+        <span class="monto">$109.900</span>
+        <span class="moneda">COP · pagas al recibir</span>
+        <span class="tag">Envío contra entrega</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-solid" href="https://tienda.onelixglobal.com/productos/difusor-aromas-ultrasonico/" target="_blank" rel="noopener">Comprar ahora</a>
+        <a class="btn btn-ghost" href="#como">Cómo se compra</a>
+      </div>
+      <p class="trustline">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        Lo probamos antes de publicarlo · 5 días para devolverlo
+      </p>
+    </div>
+    <div class="stage">
+      <img class="foto" src="difusor_precio.jpg" alt="Difusor de aromas ultrasónico OnelixGlobal">
+      <span class="chip">500 ml<small>depósito grande</small></span>
+    </div>
+  </div>
+</header>
+
+<div class="specs">
+  <div class="wrap">
+    <div class="spec"><div class="n">500<small>ml</small></div><div class="l">depósito grande</div></div>
+    <div class="spec"><div class="n">Silencio</div><div class="l">ultrasónico, no molesta</div></div>
+    <div class="spec"><div class="n">LED</div><div class="l">luz cálida multicolor</div></div>
+    <div class="spec"><div class="n">Auto</div><div class="l">se apaga sin agua</div></div>
+  </div>
+</div>
+
+<div class="bonus">
+  <div class="wrap">
+    <span class="bonus-tag">🎁 Regalo incluido</span>
+    <span class="bonus-txt">2 aceites esenciales de 10 ml (lavanda + uno a elegir) — van en la caja, sin coste extra.</span>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <span class="kicker">Por qué te sirve</span>
+    <h2>Dos trabajos en un solo aparato</h2>
+    <p class="bajada">No es solo un aroma: también devuelve humedad al ambiente seco. Y funciona a diario, en cualquier cuarto.</p>
+    <div class="dos-en-uno">
+      <div class="uso">
+        <span class="badge">Aromatiza</span>
+        <h3>Tu olor favorito en toda la casa</h3>
+        <p>Unas gotas de aceite esencial y la bruma fina lo reparte por el cuarto, sin velas ni fuego.</p>
+      </div>
+      <div class="uso">
+        <span class="badge">Humidifica</span>
+        <h3>Alivio para el ambiente seco</h3>
+        <p>Ideal para el dormitorio o la oficina con aire acondicionado: aporta humedad y se nota al dormir.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="como">
+  <div class="wrap">
+    <span class="kicker">Compra segura</span>
+    <h2>Pides, recibes y pagas al tenerlo en mano</h2>
+    <div class="como-grid">
+      <div class="pasos">
+        <div class="paso"><span class="num">01</span><h3>Haces el pedido</h3><p>Sin tarjeta y sin adelantar nada. Solo tu dirección.</p></div>
+        <div class="paso"><span class="num">02</span><h3>Te llega en 2–5 días</h3><p>Entrega contra entrega en toda Colombia, con aviso por WhatsApp.</p></div>
+        <div class="paso"><span class="num">03</span><h3>Pagas al recibir</h3><p>Y si no te convence, tienes 5 días para devolverlo.</p></div>
+      </div>
+      <img class="banner-cod" src="difusor_enuso.jpg" alt="Difusor de aromas en casa">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="kicker">Dudas frecuentes</span>
+    <h2>Antes de comprar</h2>
+    <details open>
+      <summary>¿Necesito comprar aceite aparte?<span class="plus">+</span></summary>
+      <p>Sirve con cualquier aceite esencial, e incluye 2 aceites de 10 ml de regalo para empezar.</p>
+    </details>
+    <details>
+      <summary>¿Hace ruido por la noche?<span class="plus">+</span></summary>
+      <p>No. Es ultrasónico y silencioso: apto para dormir con él encendido.</p>
+    </details>
+    <details>
+      <summary>¿Se apaga solo?<span class="plus">+</span></summary>
+      <p>Sí. Se apaga automáticamente cuando se queda sin agua, sin tener que estar pendiente.</p>
+    </details>
+    <details>
+      <summary>¿Cuánto tarda la entrega?<span class="plus">+</span></summary>
+      <p>Entre 2 y 5 días hábiles en Colombia, con pago contra entrega: pagas cuando lo tienes en casa.</p>
+    </details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div>
+      <h2>Difusor de aromas ultrasónico</h2>
+      <div><span class="monto">$109.900</span> <span class="sub">COP · pago contra entrega · 2 aceites de regalo</span></div>
+    </div>
+    <a class="btn btn-solid" href="https://tienda.onelixglobal.com/productos/difusor-aromas-ultrasonico/" target="_blank" rel="noopener">Comprar ahora →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>OnelixGlobal · Productos útiles para el día a día. Compras seguras en <a href="https://tienda.onelixglobal.com" target="_blank" rel="noopener">tienda.onelixglobal.com</a> · <a href="mailto:info@onelixglobal.com">info@onelixglobal.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
